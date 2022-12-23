@@ -1,0 +1,11 @@
+Agregar redes (linkedin y github) en el footer de la paginas
+
+Subir proyectos a github
+
+Asegurarse de que las aplicaciones funcionen bien
+
+Ver que tecnologias se usan en las aplicaciones y explicarlas en la descripcion de github
+
+Cambiar color
+
+Hacer que funcione la parte de contacto

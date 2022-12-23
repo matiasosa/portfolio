@@ -1,0 +1,23 @@
+.cont{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.box{
+    display: grid;
+    place-items: center;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    color: beige;
+}
+
+
+.inner{
+    display: grid;
+    place-items: center;
+    height: 70px;
+    background-color: aqua;
+}
+
