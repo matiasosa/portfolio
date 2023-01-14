@@ -50,7 +50,6 @@ $(document).ready(function(){
 //IDEA: dar opcion de ver el sitio en espanol o en ingles
 
 var r = document.querySelector(":root");
-
 function setColor(color)
 {
     if(color == "orange")
@@ -70,6 +69,31 @@ function setColor(color)
         r.style.setProperty("--page-color", "rgb(11, 174, 98)");
     }
 
+}
+
+function getWidth() {
+    return Math.max(
+      document.body.scrollWidth,
+      document.documentElement.scrollWidth,
+      document.body.offsetWidth,
+      document.documentElement.offsetWidth,
+      document.documentElement.clientWidth
+    );
+}
+
+var rStyle = getComputedStyle(r);
+function themesBtnFunc(){
+    if(getWidth() < 988)
+    {
+        if(rStyle.getPropertyValue("--drop-display") == "none")
+        {
+            r.style.setProperty("--drop-display", "block");
+        }
+        else
+        {
+            r.style.setProperty("--drop-display", "none");
+        }
+    }
 }
 
 // cambiar el "color actual"

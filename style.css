@@ -3,6 +3,7 @@
 
 :root{
     --page-color: rgb(20, 177, 220);
+    --drop-display: block;
 }
 
 /* MAIN */
@@ -179,7 +180,7 @@ section .title::after{
     transition: all ease 0.1s;
 }
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {display: var(--drop-display);}
 
 .orangeOption {background-color: rgb(210, 142, 24);}
 .purpleOption {background-color: rgb(114, 24, 210);}
@@ -818,13 +819,27 @@ footer span a:hover{
         font-size: 27px;
     }
 
+    .skills .title::after{
+        font-size: 18px;
+    }
+
     .utn .title::after{
         font-size: 20px;
         width: 60%;
     }
 }
 
+@media (max-width: 412px){
+    .skills .title::after{
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 375px){
+    .skills .title::after{
+        font-size: 15px;
+    }
+    
     .utn .title::after{
         font-size: 20px;
         width: 70%;
