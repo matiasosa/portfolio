@@ -22,6 +22,7 @@
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            
             <ul class="menu">
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#about">Presentación</a></li>
@@ -30,9 +31,23 @@
                 <li><a href="#teams">UTN</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+
+            <div class="nav-buttons">
+                <div class="dropdown">
+                    <button class="dropbtn themesBtn"></button>
+                    <div class="dropdown-content themes">
+                        <a class="orangeOption" onclick="setColor('orange')"></a>
+                        <a class="purpleOption" onclick="setColor('purple')"></a>
+                        <a class="lightblueOption" onclick="setColor('lightblue')"></a>
+                        <a class="greenOption" onclick="setColor('green')"></a>
+                    </div>
+                </div>
+    
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
+
         </div>
     </nav>
 
