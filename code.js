@@ -49,6 +49,8 @@ $(document).ready(function(){
 
 //IDEA: dar opcion de ver el sitio en espanol o en ingles
 
+// Theme changing
+
 var r = document.querySelector(":root");
 function setColor(color)
 {
@@ -83,22 +85,12 @@ function getWidth() {
 
 var rStyle = getComputedStyle(r);
 function themesBtnFunc(){
-    if(getWidth() < 988)
-    {
-        if(rStyle.getPropertyValue("--drop-display") == "none")
-        {
+    if(getWidth() < 988){
+        if(rStyle.getPropertyValue("--drop-display") == "none"){
             r.style.setProperty("--drop-display", "block");
         }
-        else
-        {
+        else{
             r.style.setProperty("--drop-display", "none");
         }
     }
 }
-
-// cambiar el "color actual"
-
-//rgb(210, 142, 24); naranja
-//rgb(114, 24, 210); violeta
-//rgb(11, 174, 98); verde
-//rgb(20, 177, 220); celeste
