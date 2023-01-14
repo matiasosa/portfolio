@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
 :root{
-    --page-color: rgb(210, 142, 24);;
+    --page-color: rgb(20, 177, 220);
 }
 
 /* MAIN */
@@ -695,9 +695,10 @@ footer span a:hover{
     .home .max-width{
         margin-left: 0 50px;
     }
+
     .nav-buttons{
         display: flex;
-        align-items: center;
+        align-items: center;   
         gap: 20px;
     }
 }
