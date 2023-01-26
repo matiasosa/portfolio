@@ -14,6 +14,11 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 
+    $('.menu a').click(function(){
+        $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
+    });
+
     //Typing animation
 
     var typed = new Typed(".typing", {
@@ -85,12 +90,18 @@ function getWidth() {
 
 var rStyle = getComputedStyle(r);
 function themesBtnFunc(){
-    if(getWidth() < 988){
-        if(rStyle.getPropertyValue("--drop-display") == "none"){
-            r.style.setProperty("--drop-display", "block");
-        }
-        else{
-            r.style.setProperty("--drop-display", "none");
-        }
+    if(rStyle.getPropertyValue("--drop-display") == "none"){
+        r.style.setProperty("--drop-display", "block");
     }
+    else{
+        r.style.setProperty("--drop-display", "none");
+    }    
+}
+
+function closeDrop(){
+    r.style.setProperty("--drop-display", "none");
+}
+
+function closeMenu(){
+
 }
