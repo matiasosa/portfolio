@@ -22,7 +22,7 @@ $(document).ready(function(){
     //Typing animation
 
     var typed = new Typed(".typing", {
-        strings: ["Desarrollador", "Estudiante", "Deportista"],
+        strings: ["Programador", "Estudiante", "Futuro ingeniero"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -51,10 +51,7 @@ $(document).ready(function(){
     });
 });
 
-
-//IDEA: dar opcion de ver el sitio en espanol o en ingles
-
-// Theme changing
+// Theme
 
 var r = document.querySelector(":root");
 function setColor(color)
@@ -78,15 +75,15 @@ function setColor(color)
 
 }
 
-function getWidth() {
-    return Math.max(
-      document.body.scrollWidth,
-      document.documentElement.scrollWidth,
-      document.body.offsetWidth,
-      document.documentElement.offsetWidth,
-      document.documentElement.clientWidth
-    );
-}
+// function getWidth() {
+//     return Math.max(
+//       document.body.scrollWidth,
+//       document.documentElement.scrollWidth,
+//       document.body.offsetWidth,
+//       document.documentElement.offsetWidth,
+//       document.documentElement.clientWidth
+//     );
+// }
 
 var rStyle = getComputedStyle(r);
 function themesBtnFunc(){
@@ -100,8 +97,4 @@ function themesBtnFunc(){
 
 function closeDrop(){
     r.style.setProperty("--drop-display", "none");
-}
-
-function closeMenu(){
-
 }

@@ -1,7 +1,6 @@
 .cont{
     display: flex;
-    gap: 20px;
-    
+    gap: 20px;  
 }
 
 .box{
@@ -11,6 +10,10 @@
     width: 100px;
     background-color: black;
     color: beige;
+}
+
+.one{
+    color: red;
 }
 
 
