@@ -3,6 +3,10 @@
     gap: 20px;  
 }
 
+.icono{
+    color: red;
+}
+
 .box{
     display: grid;
     place-items: center;

@@ -75,23 +75,13 @@ function setColor(color)
 
 }
 
-// function getWidth() {
-//     return Math.max(
-//       document.body.scrollWidth,
-//       document.documentElement.scrollWidth,
-//       document.body.offsetWidth,
-//       document.documentElement.offsetWidth,
-//       document.documentElement.clientWidth
-//     );
-// }
-
 var rStyle = getComputedStyle(r);
 function themesBtnFunc(){
-    if(rStyle.getPropertyValue("--drop-display") == "none"){
-        r.style.setProperty("--drop-display", "block");
+    if(rStyle.getPropertyValue("--drop-display") == "block"){
+        r.style.setProperty("--drop-display", "none");
     }
     else{
-        r.style.setProperty("--drop-display", "none");
+        r.style.setProperty("--drop-display", "block");
     }    
 }
 

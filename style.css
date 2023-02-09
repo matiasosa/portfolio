@@ -390,8 +390,7 @@ section .title::after{
     font-size: 25px;
     background: rgba(20, 177, 220, 0.488);
     border: 2px solid var(--page-color);
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.784), 2px 2px 5px rgba(0, 0, 0, 0.778);
-    text-shadow: rgba(0, 0, 0, 0.832) 2px 2px 10px;
+    text-shadow: rgba(0, 0, 0, 0.609) 2px 2px 10px;
     border-radius: 6px;
     padding: 20px 0px;
     transition: all 0.3s ease;
@@ -691,9 +690,14 @@ section .title::after{
 
 footer{
     background: #111;
-    padding: 20px 23px;
+    padding: 20px 20px;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 
 footer span a{
     color: var(--page-color);
@@ -704,6 +708,10 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+.contact-icons{
+    font-size: 25px;
+}
+
 
 
 /*  responsive media query */
@@ -712,20 +720,26 @@ footer span a:hover{
     .home .max-width{
         margin-left: 0px;
     }
+    .navbar .logo a{
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 1104px){
-    
-.about .about-content .left img{
+    .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
 
 
-@media (max-width: 991px){
+@media (max-width: 992px){
     .home .max-width{
         margin-left: 0 50px;
+    }
+
+    .navbar .logo a{
+        font-size: 28px;
     }
 
     .nav-buttons{
@@ -815,6 +829,14 @@ footer span a:hover{
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+
+    footer{
+        flex-direction: column-reverse;
+    }
+
+    .contact-icons{
+        font-size: 28px;
     }
 }
 
