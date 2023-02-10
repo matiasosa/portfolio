@@ -708,8 +708,15 @@ footer span a:hover{
     text-decoration: underline;
 }
 
-.contact-icons{
+.contact-icons i{
     font-size: 25px;
+    transition: all 0.3s ease;
+    color: white;
+    margin-right: 10px;
+}
+
+.contact-icons i:hover{
+    color: var(--page-color);
 }
 
 
@@ -837,6 +844,7 @@ footer span a:hover{
 
     .contact-icons{
         font-size: 28px;
+        margin: 0;
     }
 }
 
