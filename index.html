@@ -278,20 +278,20 @@
                     <form action="#">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nombre" required>
+                                <input type="text" id="contact-name" placeholder="Nombre" required>
                             </div>
                             <div class="field email">
-                                <input type="text" placeholder="Email" required>
+                                <input type="text" id="contact-email" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Asunto" required>
+                            <input type="text" id="contact-subject" placeholder="Asunto" required>
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Tu mensaje..." required></textarea>
+                            <textarea cols="30" rows="10" id="contact-text" placeholder="Tu mensaje..." required></textarea>
                         </div>
                         <div class="button">
-                            <button type="submit">Enviar mensaje</button>
+                            <button onclick="contact()">Enviar mensaje</button>
                         </div>
                     </form>
                 </div>

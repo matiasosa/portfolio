@@ -88,3 +88,23 @@ function themesBtnFunc(){
 function closeDrop(){
     r.style.setProperty("--drop-display", "none");
 }
+
+//const fs = require('fs')
+
+function contact(){
+    let nameInput = document.getElementById("contact-name").value
+    let emailInput = document.getElementById("contact-email").value
+    let subjectInput = document.getElementById("contact-subject").value
+    let textInput = document.getElementById("contact-text").value
+
+    let newObject = {
+        name: nameInput,
+        email: emailInput,
+        subject: subjectInput,
+        text: textInput,
+    };
+
+    let jsonString = JSON.stringify(newObject)
+    console.log(jsonString)
+}
+
