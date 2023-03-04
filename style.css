@@ -479,7 +479,7 @@ section .title::after{
 }
 
 .skills-content .right .python::before{
-    width: 75%;
+    width: 70%;
 }
 .skills-content .right .html::before{
     width: 90%;
@@ -490,7 +490,7 @@ section .title::after{
 }
 
 .skills-content .right .js::before{
-    width: 70%;
+    width: 75%;
 }
 
 /* UTN */
