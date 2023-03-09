@@ -397,7 +397,7 @@ section .title::after{
 }
 
 .project-button-cont a:hover{
-    background-color: var(--page-color);d
+    background-color: var(--page-color);
     color: #222;
 }
 
