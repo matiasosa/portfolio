@@ -289,7 +289,7 @@
 
                 <div class="column right">
                     <div class="text">O comunicate por acá</div>
-                    <form action="#">
+                    <form onsubmit="contact(); reset(); return false; ">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" id="contact-name" placeholder="Nombre" required>
@@ -305,7 +305,7 @@
                             <textarea cols="30" rows="10" id="contact-text" placeholder="Tu mensaje..." required></textarea>
                         </div>
                         <div class="button">
-                            <button onclick="contact()">Enviar mensaje</button>
+                            <button type="submit">Enviar mensaje</button>
                         </div>
                     </form>
                 </div>
@@ -325,5 +325,26 @@
     </footer>
     
     <script src="code.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function contact(){
+            let nameInput = document.getElementById("contact-name").value
+            let emailInput = document.getElementById("contact-email").value
+            let subjectInput = document.getElementById("contact-subject").value
+            let textInput = document.getElementById("contact-text").value
+
+            Email.send({
+                SecureToken : "e69801ea-3507-4b77-a46e-da52b2dea73a",
+                To : "matisosaliuni@gmail.com",
+                From : "mailforportfoliowebsite@gmail.com",
+                Subject : subjectInput,
+                Body : "Name: " + nameInput + "<br> mail: " + emailInput + "<br>Subjet: " + subjectInput + "<br>Body: " + textInput
+            }).then(
+            message => alert("Gracias por contactarte!")
+            );
+        }
+
+        
+    </script>
 </body>
 </html>
